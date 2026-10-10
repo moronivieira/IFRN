@@ -56,8 +56,8 @@ docker network inspect windows_lab
 Crie o diretório do projeto:
 
 ```bash
-mkdir -p ~/dockur/windows-server
-cd ~/dockur/windows-server
+mkdir -p ~/labwindows/windows-server 
+cd ~/labwindows/windows-server
 ```
 
 Crie o arquivo `docker-compose.yml` com o conteúdo:
@@ -280,10 +280,9 @@ Se o ping falhar:
 1. confirme que ambos os Windows terminaram de inicializar;
 2. confira os endereços, as máscaras e os gateways com `ipconfig`;
 3. verifique se os dois sistemas estão em redes IP que tenham rota entre si;
-4. confira o Firewall do Windows e as regras de entrada para ICMP;
+4. Desative o Firewall Acessando o Painel de Controle do Windows;
 5. verifique os logs dos containers.
 
-Não desative o firewall permanentemente. Para atividades de laboratório, prefira habilitar regras específicas e reativar qualquer proteção desativada para diagnóstico.
 
 > Se os Windows convidados receberem endereços de redes internas diferentes ou isoladas, conectá-los à mesma rede Docker não cria automaticamente uma rede comum entre as VMs. Nesse caso, será necessário configurar a rede virtual interna do Dockur/QEMU de forma compatível com a versão e as opções utilizadas. Consulte a [documentação do Dockur Windows](https://github.com/dockur/windows).
 
@@ -360,10 +359,10 @@ Confira a configuração de rede dentro do Windows convidado e os logs do Dockur
 Para parar e remover os containers sem apagar os dados persistidos nos diretórios `storage`:
 
 ```bash
-cd ~/dockur/windows-server
+cd ~/windowslab/windows-server
 docker compose down
 
-cd ~/dockur/windows7
+cd ~/windowslab/windows7
 docker compose down
 ```
 
