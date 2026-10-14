@@ -56,8 +56,8 @@ docker network inspect windows_lab
 Crie o diretório do projeto:
 
 ```bash
-mkdir -p ~/labwindows/windows-server 
-cd ~/labwindows/windows-server
+mkdir -p ~/labwindows/info/windows-server 
+cd ~/labwindows/info/windows-server
 ```
 
 Crie o arquivo `docker-compose.yml` com o conteúdo:
@@ -119,8 +119,8 @@ A primeira inicialização pode demorar. Aguarde o término da preparação e o 
 Crie outro diretório:
 
 ```bash
-mkdir -p ~/dockur/windows7
-cd ~/dockur/windows7
+mkdir -p ~/dockur/info/windows7
+cd ~/dockur/info/windows7
 ```
 
 Crie um segundo arquivo `docker-compose.yml`:
