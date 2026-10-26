@@ -36,11 +36,12 @@ Se o dispositivo não existir, confira se a virtualização está habilitada no 
 Crie uma rede dedicada chamada `windows_lab`, usando a sub-rede `172.30.0.0/24`:
 
 ```bash
-docker network create \
-  --driver bridge \
-  --subnet 172.30.0.0/24 \
-  --gateway 172.30.0.1 \
-  windows_lab
+docker network create -d macvlan \
+  --subnet=10.49.0.0/16 \
+  --gateway=10.49.0.1 \
+  --ip-range=10.49.250.0/28 \
+  -o parent=enp0s31f6 \
+  windows_macvlan
 ```
 
 Confira a configuração:
