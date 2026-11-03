@@ -67,7 +67,7 @@ Crie o arquivo `docker-compose.yml` com o conteúdo:
 services:
   windows-server:
     image: dockurr/windows:latest
-    container_name: windows-server
+    container_name: windows-server-info
 
     environment:
       VERSION: "2019"
