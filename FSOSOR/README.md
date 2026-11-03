@@ -66,41 +66,38 @@ Crie o arquivo `docker-compose.yml` com o conteúdo:
 ```yaml
 services:
   windows-server:
-    image: dockurr/windows
+    image: dockurr/windows:latest
     container_name: windows-server
 
     environment:
       VERSION: "2019"
-      RAM_SIZE: "8G"
+      RAM_SIZE: "6G"
       CPU_CORES: "2"
-      DHCP: "Y"
 
     devices:
       - /dev/kvm
       - /dev/net/tun
-      - /dev/vhost-net
-
-    device_cgroup_rules:
-      - 'c *:* rwm'
 
     cap_add:
       - NET_ADMIN
 
     networks:
-      windows_macvlan:
-        ipv4_address: 10.49.250.2
-
-    volumes:
-      - ./windows-server:/storage
+      windows_lab:
+        ipv4_address: 172.30.0.10
 
     ports:
       - "8006:8006"
+      - "3390:3389/tcp"
+      - "3390:3389/udp"
 
-    restart: always
+    volumes:
+      - ./storage:/storage
+
+    restart: unless-stopped
     stop_grace_period: 2m
 
 networks:
-  windows_macvlan:
+  windows_lab:
     external: true
 ```
 
