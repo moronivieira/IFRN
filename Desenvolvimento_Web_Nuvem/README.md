@@ -11,7 +11,7 @@ Este repositório contém o material didático traduzido, estruturado e adaptado
 
 | Aula | Tópico | Descrição do Conteúdo | Arquivo |
 | :---: | :--- | :--- | :--- |
-| **Aula 01** | Pods101 | Conceito de Pod, criação com Nginx, inspeção JSON, `exec` e múltiplos contêineres | [`aula-01-pods101.md`](./Aula01/aula-01-pods101.md) |
+| **Aula 01** | Pods101 | Conceito de Pod, criação com Nginx, inspeção JSON, `exec` e múltiplos contêineres | [`aula-01-pods101.md`](./Aula-01/aula-01-pods101.md) |
 | **Aula 02** | ReplicaSet101 | Escalonamento, tolerância a falhas, seletores de rótulos e gerenciamento de réplicas | [`aula-02-replicaset101.md`](./Aula-02/aula-02-replicaset101.md) |
 | **Aula 03** | Deployment101 | Atualizações contínuas (*Rolling Updates*), revisões e *Rollbacks* sem indisponibilidade | [`aula-03-deployment101.md`](./Aula-03/aula-03-deployment101.md) |
 | **Aula 04** | ConfigMaps101 | Injeção de configurações em tempo de execução via Variáveis de Ambiente e Volumes | [`aula-04-configmaps101.md`](./Aula-04/aula-04-configmaps101.md) |
