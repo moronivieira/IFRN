@@ -3,7 +3,7 @@
 ## Objetivos da Aula
 Nesta aula prática, você aprenderá as operações fundamentais para trabalhar com a menor unidade implantável no Kubernetes: o **Pod**.
 
-![Arquitetura de Pods](https://kubernetes.io/images/docs/pod.svg){width=50%}
+![Arquitetura de Pods](https://kubernetes.io/images/docs/pod.svg){width=200px}
 
 ### 1. Criando o seu Primeiro Pod Nginx
 Crie um Pod executando a imagem oficial do Nginx utilizando o utilitário `kubectl`:
