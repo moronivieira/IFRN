@@ -7,7 +7,6 @@ Nesta aula prática, você aprenderá as operações fundamentais para trabalhar
   <img src="https://kubernetes.io/images/docs/pod.svg" alt="Texto Alternativo" width="20%">
 </p>
 
-![Arquitetura de Pods](https://kubernetes.io/images/docs/pod.svg){width=200px}
 
 ### 1. Criando o seu Primeiro Pod Nginx
 Crie um Pod executando a imagem oficial do Nginx utilizando o utilitário `kubectl`:
