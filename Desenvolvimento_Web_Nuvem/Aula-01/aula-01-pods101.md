@@ -3,9 +3,9 @@
 ## Objetivos da Aula
 Nesta aula prática, você aprenderá as operações fundamentais para trabalhar com a menor unidade implantável no Kubernetes: o **Pod**.
 
-<img src="https://kubernetes.io/images/docs/pod.svg", width="400">
-
-</img>
+<p align="center">
+  <img src="https://kubernetes.io/images/docs/pod.svg" alt="Texto Alternativo" width="50%">
+</p>
 
 ![Arquitetura de Pods](https://kubernetes.io/images/docs/pod.svg){width=200px}
 
