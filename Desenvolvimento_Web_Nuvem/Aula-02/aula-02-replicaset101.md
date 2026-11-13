@@ -3,7 +3,10 @@
 ## Objetivos da Aula
 Entender o funcionamento dos **ReplicaSets**, responsáveis por garantir que um número especificado de réplicas de um Pod permaneça em execução continuamente.
 
-![Arquitetura do ReplicaSet](./imagens/replicaset_architecture.png)
+<p align="center">
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240120135751/Screenshot-2024-01-20-134433.png" alt="Texto Alternativo" width="30%">
+</p>
+
 
 ### 1. Criando o manifesto do ReplicaSet
 Crie o arquivo `replicaset.yaml`:
