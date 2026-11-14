@@ -80,8 +80,60 @@ Filtre os Pods com base em suas rotulagens:
 kubectl get pods -l app=web-logger
 ```
 
-### 7. Encerrando e Excluindo o Pod
+### 7. Gerar um manifesto de Pod
+```kubectl run nginx --image=nginx --dry-run=client -o yaml > pod.yaml```
+
+
+### 8. Análise o código do arquivo YAML
+```apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+```
+
+### 9. Altere a imagem para uma imagem para o redis
+```apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+    - name: nginx
+      image: redis
+```
+
+### 10. Inspecione o Pod
+
+```kubectl describe pod nginx```
+
+Visualize os seguintes itens:
+- Pod status
+- Container details
+- Node information
+- IP address
+- Events
+
+### 11. Visualize os logs do Pod
+
+```kubectl logs nginx```
+
+
+### 12. Encerrando e Excluindo o Pod
 Para remover os Pods criados durante esta aula:
 ```bash
 kubectl delete pod meu-nginx pod-duplo
 ```
+
+### 13. Comandos básicos para Pods no Kubernetes
+Criar ou atualizar um Pod
+```kubectl create -f [FILENAME]```
+
+Deletar o Pod
+```kubectl delete -f FILENAME```
+
+Para visulizar pods em um namespace específico
+```kubectl get pod <name> --namespace```
